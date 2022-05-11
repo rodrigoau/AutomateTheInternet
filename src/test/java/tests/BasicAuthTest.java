@@ -4,7 +4,7 @@ import base.SetupFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-import static base.DriverFactory.getDriver;
+import static base.DriverFactory.*;
 
 public class BasicAuthTest extends SetupFactory {
 

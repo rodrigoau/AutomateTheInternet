@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-09T15:33:08 CDT" name="Command line suite" finished-at="2022-05-09T15:33:15 CDT" duration-ms="6726">
+    <groups>
+    </groups>
+    <test started-at="2022-05-09T15:33:08 CDT" name="Command line test" finished-at="2022-05-09T15:33:15 CDT" duration-ms="6726">
+      <class name="tests.ABTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ABTest@70f43b45]" started-at="2022-05-09T15:33:07 CDT" name="setUp" finished-at="2022-05-09T15:33:08 CDT" duration-ms="1060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getText()[pri:0, instance:tests.ABTest@70f43b45]" started-at="2022-05-09T15:33:08 CDT" name="getText" description="Open page." finished-at="2022-05-09T15:33:09 CDT" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ABTest@70f43b45]" started-at="2022-05-09T15:33:15 CDT" name="tearDown" finished-at="2022-05-09T15:33:15 CDT" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ABTest -->
+      <class name="tests.BasicAuthTest">
+        <test-method signature="setKeys()[pri:0, instance:tests.BasicAuthTest@50b0bc4c]" started-at="2022-05-09T15:33:09 CDT" name="setKeys" finished-at="2022-05-09T15:33:09 CDT" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setKeys -->
+      </class> <!-- tests.BasicAuthTest -->
+      <class name="tests.DynamicTest">
+        <test-method signature="secondRemoveTest()[pri:0, instance:tests.DynamicTest@5f577419]" started-at="2022-05-09T15:33:09 CDT" name="secondRemoveTest" finished-at="2022-05-09T15:33:15 CDT" duration-ms="6288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondRemoveTest -->
+      </class> <!-- tests.DynamicTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

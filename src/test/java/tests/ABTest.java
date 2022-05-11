@@ -17,13 +17,13 @@ public class ABTest extends SetupFactory {
     ABTestPage abPage = getAbTestPage();
     String dataName;
 
-    @Test
+    @Test(enabled = false)
     public void getData(){
         dataName = properties.getProperty("data.name");
         System.out.println(dataName);
     }
 
-    @Test(enabled = true)
+    @Test(description = "Open page.")
     public void getText() throws IOException {
         Assert.assertTrue(abPage.reachPage(), "Could not reach page");
         abPage.getText().getScreenShot();

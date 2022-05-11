@@ -23,6 +23,7 @@ public class RestAssuredAPITesting {
         System.out.println(response);
 
         JsonPath js = new JsonPath(response);
+        System.out.println(js);
         //String key = js.get("coord");
         //System.out.println(key);
     }

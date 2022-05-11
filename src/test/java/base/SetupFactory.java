@@ -10,10 +10,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
-import static base.DriverFactory.getDriver;
-import static base.DriverFactory.getWebDriverWait;
+import static base.DriverFactory.*;
 
 public class SetupFactory {
     WebDriver driver;
@@ -26,13 +24,11 @@ public class SetupFactory {
     public void setUp() throws IOException {
         properties.load(new FileInputStream(new File(propFile)));
         driver = getDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("https://the-internet.herokuapp.com/");
-        wait = getWebDriverWait();
     }
 
-    @AfterSuite(enabled = false)
+    @AfterSuite(enabled = true)
     public void tearDown(){
         driver.close();
         driver.quit();

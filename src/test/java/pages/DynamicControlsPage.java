@@ -14,7 +14,7 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
-import static base.DriverFactory.getDriver;
+import static base.DriverFactory.*;
 
 public class DynamicControlsPage extends SetupFactory {
 

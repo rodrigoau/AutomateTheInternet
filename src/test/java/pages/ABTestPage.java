@@ -7,17 +7,19 @@ import org.openqa.selenium.*;
 import java.io.File;
 import java.io.IOException;
 
-import static base.DriverFactory.getDriver;
+import static base.DriverFactory.*;
+
 
 public class ABTestPage extends SetupFactory {
+
 
     WebDriver driver = getDriver();
 
     private final By linkToPage = By.linkText("A/B Testing");
     private final By titleTag = By.tagName("h3");
 
-    private ABTestPage(){}
 
+    private ABTestPage(){}
     //Singleton
     public static ABTestPage getAbTestPage(){
         return new ABTestPage();

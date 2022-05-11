@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DynamicControlsPage;
 
-import static base.DriverFactory.getDriver;
+import static base.DriverFactory.*;
 import static pages.DynamicControlsPage.getDynamicControlsPage;
 
 
