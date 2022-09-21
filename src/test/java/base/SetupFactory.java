@@ -17,18 +17,18 @@ public class SetupFactory {
     WebDriver driver;
     WebDriverWait wait;
 
-    private final String propFile = "src/test/resources/data.properties";
-    protected Properties properties = new Properties();
+    //private final String propFile = "src/test/resources/data.properties";
+    //protected Properties properties = new Properties();
 
     @BeforeSuite
     public void setUp() throws IOException {
-        properties.load(new FileInputStream(new File(propFile)));
+        //properties.load(new FileInputStream(new File(propFile)));
         driver = getDriver();
         driver.manage().window().maximize();
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get("https://es.wikipedia.org/");
     }
 
-    @AfterSuite(enabled = true)
+    @AfterSuite(enabled = false)
     public void tearDown(){
         driver.close();
         driver.quit();
