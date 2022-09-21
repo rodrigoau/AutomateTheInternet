@@ -16,8 +16,8 @@ import static pages.WikipediaPage.getWikipediaPage;
 
 public class WikipediaTest extends SetupFactory {
 
-    String propFile = "src/test/resources/data.properties";
-    Properties properties = new Properties();
+    //String propFile = "src/test/resources/data.properties";
+    //Properties properties = new Properties();
     String searchContext;
 
 
@@ -25,7 +25,7 @@ public class WikipediaTest extends SetupFactory {
 
     @BeforeClass
     public void initializeTest() throws IOException {
-        properties.load(new FileInputStream(new File(propFile)));
+        //properties.load(new FileInputStream(new File(propFile)));
         this.searchContext = properties.getProperty("data.search");
     }
 
