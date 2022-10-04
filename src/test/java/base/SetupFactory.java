@@ -28,7 +28,7 @@ public class SetupFactory {
         driver.get("https://es.wikipedia.org/");
     }
 
-    @AfterSuite(enabled = false)
+    @AfterSuite(enabled = true)
     public void tearDown(){
         driver.close();
         driver.quit();

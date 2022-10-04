@@ -9,19 +9,19 @@ import java.io.IOException;
 
 import static base.DriverFactory.getDriver;
 
-public class WikipediaPage extends SetupFactory {
+public class WikipediaPageSingleton extends SetupFactory {
     WebDriver driver = getDriver();
 
-    private WikipediaPage(){}
+    private WikipediaPageSingleton(){}
 
+    public static WikipediaPageSingleton getWikipediaPage(){
+        return new WikipediaPageSingleton();
+    }
     private final By searchBarInput = By.xpath("//*[@id='searchInput']");
     private final By searchButton = By.xpath("//*[@id='searchButton']");
     private final By titleText = By.className("mw-page-title-main");
-    public static WikipediaPage getWikipediaPage(){
-        return new WikipediaPage();
-    }
 
-    public WikipediaPage searchFor(String context){
+    public WikipediaPageSingleton searchFor(String context){
         WebElement searchBarElement = driver.findElement(searchBarInput);
         searchBarElement.click();
         searchBarElement.clear();
@@ -29,13 +29,13 @@ public class WikipediaPage extends SetupFactory {
         return this;
     }
 
-    public WikipediaPage submit(){
+    public WikipediaPageSingleton submit(){
         WebElement searchButtonElement = driver.findElement(searchButton);
         searchButtonElement.click();
         return this;
     }
 
-    public WikipediaPage validateTitle(String context){
+    public WikipediaPageSingleton validateTitle(String context){
         WebElement titleTextElement = driver.findElement(titleText);
         String titleText = titleTextElement.getText();
         if(titleText.contains(context)){
@@ -46,7 +46,7 @@ public class WikipediaPage extends SetupFactory {
         return this;
     }
 
-    public WikipediaPage takeScreenShot() throws IOException {
+    public WikipediaPageSingleton takeScreenShot() throws IOException {
         File evidence = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(evidence, new File("src/test/screenshots/"+getClass().getSimpleName()+".png"));
         return this;
