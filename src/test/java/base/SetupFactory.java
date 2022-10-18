@@ -22,13 +22,13 @@ public class SetupFactory {
 
     @BeforeSuite
     public void setUp() throws IOException {
-        properties.load(new FileInputStream(new File(propFile)));
+        //properties.load(new FileInputStream(new File(propFile)));
         driver = getDriver();
         driver.manage().window().maximize();
         driver.get("https://es.wikipedia.org/");
     }
 
-    @AfterSuite(enabled = true)
+    @AfterSuite(enabled = false)
     public void tearDown(){
         driver.close();
         driver.quit();
