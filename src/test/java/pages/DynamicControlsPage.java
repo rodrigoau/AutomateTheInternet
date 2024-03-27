@@ -59,11 +59,12 @@ public class DynamicControlsPage extends SetupFactory {
     }
 
     public DynamicControlsPage startTextExplicit(){
+        Duration secs = Duration.ofSeconds(10);
         WebElement button = driver.findElement(startButtonElement);
         button.click();
         WebElement text = driver.findElement(helloWorldElement);
         String hw = text.getText();
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, secs);
         wait.until(ExpectedConditions.textToBePresentInElement(text, "Hello World!"));
         /*
         if(text.isDisplayed())
