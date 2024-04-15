@@ -1,13 +1,12 @@
-package tests.api;
+package tests.restassured;
 
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 
-public class RestAssuredAPITesting {
+public class OpenWeather {
 
     public String q = "London";
     public String appid = "567c0b3881b68db79a2a1b0da0c82f0f";
