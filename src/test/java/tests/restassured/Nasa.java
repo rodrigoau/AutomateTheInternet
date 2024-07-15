@@ -2,6 +2,7 @@ package tests.restassured;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.hamcrest.Matchers;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
@@ -37,6 +38,12 @@ public class Nasa {
     @Test
     public void testCode(){
         Assert.assertEquals(response.getStatusCode(),200);
+    }
+
+    @Test
+    public void testResponse(){
+        System.out.println(response.asString());
+        response.then().assertThat().body("sol_keys",  Matchers.notNullValue());
     }
 
 }
