@@ -1,6 +1,7 @@
 package tests;
 
 import base.SetupFactory;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -16,7 +17,8 @@ import java.util.Properties;
 import static base.DriverFactory.getDriver;
 import static pages.WikipediaPageSingleton.getWikipediaPage;
 
-public class WikipediaTest extends SetupFactory {
+public class
+WikipediaTest extends SetupFactory {
 
     WebDriver driver = getDriver();
 
@@ -32,12 +34,12 @@ public class WikipediaTest extends SetupFactory {
         this.searchContext = prop.getProperty("data.search");
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void searchForSomethingTest() throws IOException {
         wikiPage.searchFor(searchContext).submit().validateTitle(searchContext).takeScreenShot();
     }
 
-    @Test
+    @Test(enabled = false)
     public void searchForSomethingAssertTest(){
         WikipediaPagePOM wkf = new WikipediaPagePOM(getDriver());
         Assert.assertTrue(wkf.searchForAssert(searchContext), "Failed trying to search.");

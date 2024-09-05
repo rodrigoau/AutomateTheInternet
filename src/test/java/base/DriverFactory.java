@@ -13,7 +13,7 @@ public class DriverFactory {
 
     public static WebDriver driver;
     public static WebDriverWait wait;
-    final static String browser = "chrome_manageer";
+    final static String browser = "chrome_manager";
 
     public static WebDriver getDriver(){
         if(driver == null){
@@ -28,10 +28,6 @@ public class DriverFactory {
                     driver = new FirefoxDriver();
                 }
                 case "chrome_manager" -> {
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
-                }
-                case "chrome_manageer" -> {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                 }
