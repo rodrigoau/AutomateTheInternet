@@ -1,0 +1,12 @@
+D:\Development\AutomateTheInternet\src\test\java\base\DriverFactory.java
+D:\Development\AutomateTheInternet\src\test\java\base\SetupFactory.java
+D:\Development\AutomateTheInternet\src\test\java\pages\DynamicControlsPage.java
+D:\Development\AutomateTheInternet\src\test\java\pages\WikipediaPageFactory.java
+D:\Development\AutomateTheInternet\src\test\java\pages\WikipediaPagePOM.java
+D:\Development\AutomateTheInternet\src\test\java\pages\WikipediaPageSingleton.java
+D:\Development\AutomateTheInternet\src\test\java\tests\DummyTest.java
+D:\Development\AutomateTheInternet\src\test\java\tests\DynamicTest.java
+D:\Development\AutomateTheInternet\src\test\java\tests\restassured\Nasa.java
+D:\Development\AutomateTheInternet\src\test\java\tests\restassured\OpenWeather.java
+D:\Development\AutomateTheInternet\src\test\java\tests\WikipediaTest.java
+D:\Development\AutomateTheInternet\src\test\java\utils\utils.java

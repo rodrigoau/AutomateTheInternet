@@ -28,8 +28,7 @@ public class DriverFactory {
                     driver = new FirefoxDriver();
                 }
                 case "chrome_manager" -> {
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = WebDriverManager.chromedriver().create();
                 }
                 default -> {
                     System.setProperty("webdriver.edge.driver", "C:/drivers_explorers/msedgedriver.exe");

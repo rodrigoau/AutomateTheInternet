@@ -1,0 +1,13 @@
+tests\WikipediaTest.class
+tests\DummyTest.class
+pages\WikipediaPageFactory.class
+tests\restassured\OpenWeather.class
+pages\WikipediaPagePOM.class
+pages\DynamicControlsPage.class
+pages\DynamicControlsPage$1.class
+tests\DynamicTest.class
+base\DriverFactory.class
+base\SetupFactory.class
+tests\restassured\Nasa.class
+pages\WikipediaPageSingleton.class
+utils\utils.class

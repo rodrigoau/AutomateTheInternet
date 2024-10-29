@@ -1,20 +1,20 @@
 package tests;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import static base.DriverFactory.getDriver;
+
 public class DummyTest {
 
-    WebDriver driver;
+    WebDriver driver = getDriver();;
 
     @BeforeClass
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "C:/Users/idsay/Downloads/chromedriver-win64/chromedriver.exe");
-        driver = new ChromeDriver();
+        //System.setProperty("webdriver.chrome.driver", "C:/Users/idsay/Downloads/chromedriver-win64/chromedriver.exe");
+        //driver = new ChromeDriver();
     }
 
     @Test
