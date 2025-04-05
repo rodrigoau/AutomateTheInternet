@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="D:/Development/IdeaProjects/AutomateTheInternet/src/test/java/tests/WikipediaTest.java">
+    <test verbose="2" preserve-order="true" name="D:/Development/IdeaProjects/AutomateTheInternet/src/test/java/web.tests/WikipediaTest.java">
         <classes>
-            <class name="tests.WikipediaTest">
+            <class name="web.tests.WikipediaTest">
                 <methods>
                     <include name="searchForSomethingAssertTest"/>
                 </methods>
