@@ -19,8 +19,6 @@ import static web.pages.WikipediaPageSingleton.getWikipediaPage;
 public class
 WikipediaTest extends SetupFactory {
 
-    WebDriver driver = getDriver();
-
     String propFile = "src/test/resources/data.properties";
     Properties prop = new Properties();
     String searchContext;
